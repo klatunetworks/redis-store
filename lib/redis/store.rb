@@ -71,6 +71,9 @@ class Redis
         options.delete(:marshalling)
         options.delete(:namespace)
         options.delete(:scheme)
+        options.delete(:expire_after)
+        options.delete(:expires_in)
+        options.delete(:expire_in)
       end
 
       def _extend_marshalling
